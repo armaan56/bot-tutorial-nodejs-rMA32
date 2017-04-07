@@ -8,7 +8,7 @@ function respond() {
       botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
       botRegexAd=/^\/advance/;botRegexGTA = /^\/rookies/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
-      botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; 
+      botRegexSiege = /^\/siege/; botRegexOW = /^\/blog/; 
       botRegexSlut = /^\/goat/; botRegexStop = /^\/stop/;
       botRegexProp = /^\/prop/;botRegexKys = /^\/kys/; botRegexSlam = /^\/slam/; botRegexBrye = /^\/brye/;
       botRegexGian = /^\/gian/; botRegexScrotes = /^\/scrotes/; botRegexShaki = /^\/shaki/;
@@ -76,13 +76,13 @@ function respond() {
   else if(request.text && botRegexDL.test(request.text)) {
     this.res.writeHead(200);
     //postMessage("http://www.daddyleagues.com/maddenrating?name=&position=all&team="+request.text.substring(5,8));
-    postMessage("http://daddyleagues.com/CGL/team/"+request.text.substring(5,8)+"/depthchart");
+    postMessage("http://daddyleagues.com/CGL);
     this.res.end();
   } 
   
   else if(request.text && botRegexOW.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("www.daddyleagues.com/maddenrating/");
+    postMessage("http://daddyleagues.com/CGL/blog");
     this.res.end();
   } 
   else if(request.text && botRegexSalt.test(request.text)) {
